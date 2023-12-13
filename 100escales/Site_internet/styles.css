@@ -1,0 +1,435 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes animatedBackgroundGreenLines {
+    0%, 100% { background-position: 0% 50%, 100% 50%, 50% 0%, 50% 100%, 0% 0%; }
+    50% { background-position: 100% 50%, 0% 50%, 50% 100%, 50% 0%, 100% 100%; }
+}
+
+.background {
+    background-image: url('tumblr_o8jsdx1ow31s8mouyo1_640.gif'); /* Remplacez par l'URL de votre GIF */
+    background-size: cover; /* Couvre tout l'écran sans étirer le GIF */
+    background-repeat: no-repeat; /* Empêche la répétition du GIF */
+    background-position: center center; /* Centre le GIF */
+}
+
+
+
+@keyframes animatedBackgroundOrganicLimeGreen {
+    0%, 100% { background-position: 0% 0%, 100% 0%; }
+    50% { background-position: 100% 0%, 0% 100%; }
+}
+
+body.organic-background {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #AAFAF9; /* Fond vert lime */
+    color: #5A3E36;
+    padding: 20px;
+    background-image: 
+        radial-gradient(circle at 10% 20%, transparent 35%, rgba(50, 205, 50, 0.3) 35.5%, transparent 36%),
+        radial-gradient(circle at 90% 80%, transparent 40%, rgba(24, 154, 24, 0.3) 40.5%, transparent 41%), 
+        radial-gradient(circle at 50% 50%, #32CD32, #28A428, transparent),
+        radial-gradient(circle at 40% 40%, transparent, #36CF36, transparent);
+    background-size: 
+        40% 40%, 
+        40% 40%, 
+        80% 80%, 
+        70% 70%;
+    animation: animatedBackgroundOrganicLimeGreen 60s linear infinite;
+}
+
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+h6 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    margin-top: 0vh;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+	
+
+    /* Ajout de l'animation de dactylographe */
+       overflow: hidden; /* Cache le texte débordant pendant l'animation */   
+       white-space: nowrap; /* Empêche le texte de passer à la ligne */
+       animation: typewriter 2s steps(40, end);
+       text-shadow:
+        0 0 1px #fff,   1px 0 1px #fff,  -1px 0 1px #fff,   0 1px 1px #fff,   0 -1px 1px #fff,
+        2px 0 1px #fff, -2px 0 1px #fff,  0 2px 1px #fff,   0 -2px 1px #fff;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    50%, 100% {
+        width: 100%;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.georgia {
+    font-family: 'Cambria', sans-serif;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+    text-align:left;
+    /*background-color: #006400;*/
+
+    /* Ajout de l'animation de dactylographe */
+    overflow: hidden; /* Cache le texte débordant pendant l'animation */
+    
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    animation:slideFromRight 2s ease-out forwards; 
+    text-shadow:
+        0 0 1px #fff,   1px 0 1px #fff,  -1px 0 1px #fff,   0 1px 1px #fff,   0 -1px 1px #fff,
+        2px 0 1px #fff, -2px 0 1px #fff,  0 2px 1px #fff,   0 -2px 1px #fff;
+        
+}
+
+
+
+
+h1, h2, h3 {
+    color: #0f2027;
+    background-image: linear-gradient(to right, #0f2027, #243c47, #345664); /* Gradient légèrement assombri */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* Ajustement de l'ombre portée : moins de distance, moins de flou, et une transparence accrue */
+}
+
+h4 {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+	
+h5 {
+    color: #FFFFFF;
+    font-size : 15px;
+    
+}
+
+a {
+    color: #2C3E50;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.container_droite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* animation:slideFromRight 3s ease-out forwards; */
+}
+.container_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+.container_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px;
+    
+    margin:  auto;
+    width:80%;
+    
+}
+a.compartment {
+    display: block;
+}
+
+.compartment {
+    flex: 0 1 calc(45% - 20px); /* Taille par défaut */
+    background-image: linear-gradient(to bottom, #E0E0E0, #F5F5F5); /* Dégradé vertical de beige foncé à beige clair */
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    
+}
+
+
+.compartment.small {
+    flex: 0 1 calc(22.5% - 10px);
+}
+
+.compartment:hover {
+    transform: translateY(-7px) scale(1.05);
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.3), 
+        0 15px 45px rgba(0, 0, 0, 0.15),
+        inset 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.language, .atout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.language-name, .atout-name {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.bar {
+    flex: 2;
+    background-color: #BDC3C7;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 10px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+.compartment2 {
+    flex: 0 1 calc(10% - 20px);
+    background-color: #2C3C4F; /* Fond gris sombre */
+    padding: 10px;
+    border: 3px dotted #000; /* Contour en pointillé noir */
+    border-radius: 5px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    color: #EAECEE; /* Couleur du texte clair pour une meilleure lisibilité sur un fond sombre */
+
+}
+
+.compartment2:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.futurist-text {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #1A5276;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+.outer {  
+   width: 150px;  
+   height: 150px;  
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);  
+   border-radius: 35px;  
+   display: grid;  
+   place-items: center;  
+ }  
+ /* innerside in outer box */  
+ .inner {  
+   width: 120px;  
+   height: 120px;  
+   border: 10px solid #fff;  
+   border-radius: 32px;  
+   display: grid;  
+   place-items: center;  
+   position: relative;  
+ } 
+ /* center circle of logo */  
+ .inner::before {  
+   content: '';  
+   width: 45px;  
+   height: 45px;  
+   border: 10px solid #fff;  
+   border-radius: 50%;  
+   background: transparent;  
+   position: absolute;  
+ }  
+ /* top right circle of logo */  
+ .inner::after {  
+   content: '';  
+   width: 10px;  
+   height: 10px;  
+   border: 2px solid #fff;  
+   border-radius: 50%;  
+   background: #fff;  
+   position: absolute;  
+   top: 8px;  
+   right: 10px;  
+ } 
+
+
+
+ .bandeau a {
+    color: #ffffff; /* couleur du texte (blanc) */
+    margin: 0 10px; /* espacement autour des ic�nes */
+    text-decoration: none; /* supprime le soulignement */
+}
+
+.bandeau {
+background-color: #EDF1F1;
+display: flex;
+justify-content: center; /* Centrage horizontal des �l�ments */
+align-items: center;
+padding: 10px 0; /* espace au-dessus et en-dessous du texte */
+font-family: Arial, sans-serif;
+height: 50px;
+position: fixed; /* position fixe en haut */
+top: 0; /* ajout de cette ligne pour fixer le bandeau en haut */
+width: 100%; /* pleine largeur */
+z-index: 1000; /* s'assurer qu'il reste au-dessus des autres �l�ments */
+color: #ffffff; /* texte en blanc */
+text-align: center; /* centrage du texte */
+font-weight: bold; /* texte en gras */
+}
+
+
+
+
+.bandeau .case {
+color: black;
+}
+
+.menu-hamburger {
+position: absolute; /* Le positionnement absolu place le bouton par rapport � .bandeau */
+top: 10px;
+left: 10px;
+display: flex;
+flex-direction: column; /* Les barres sont empil�es verticalement */
+gap: 5px; /* Espace entre les barres */
+z-index: 1001;
+position:fixed;
+}
+
+.barre {
+width: 25px; /* Vous pouvez ajuster la largeur */
+height: 3px; /* Vous pouvez ajuster la hauteur */
+background-color: #000000; /* Couleur des barres. Ici, blanc. */
+}
+
+.nav-slide {
+position: fixed;
+left: -300px; /* La largeur de votre menu */
+top: 0;
+height: 100%;
+width: 300px; /* Ajustez selon vos pr�f�rences */
+background-color: #333;
+z-index: 1000;
+transition: transform 0.3s ease-in-out;
+
+
+
+}
+
+.nav-slide ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    text-align: center;
+    font-weight:bold;
+    Font-size:36px;
+}
+
+    .nav-slide ul li {
+        margin: 10px 0;
+    }
+
+        .nav-slide ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            display: block;
+        }
+
+.nav-slide.open {
+    transform: translateX(300px); /* La largeur de votre menu */
+}
+
+.h2 {
+    font-family: 'Cambria', sans-serif;
+    font-size: 56px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.5;
+    padding: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Ombre plus marqu�e */
+}
+.background_article{
+background-color: #f4f4f4}
+
+.img2 {
+    position: right;
+    top: 200px;
+    left: 50px;
+    z-index: 1;
+    height: 300px;
+    width: 200px;
+    opacity: 1;
+}
+
