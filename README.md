@@ -1,5 +1,5 @@
 
-<img src="https://github.com/LouIcam2026/EC5-Cloud-TP1/blob/master/Logo.jpg?raw=true" width="200" height="400" />
+<img src="https://github.com/LouIcam2026/EC5-Cloud-TP1/blob/master/Logo.png?raw=true" width="200" height="200" />
 # 100 Escales Websites
 
 ## Related
